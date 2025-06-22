@@ -1,0 +1,113 @@
+/* Header styles */
+header {
+  background: linear-gradient(90deg, #06aed5 0%, #77dd77 100%);
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Main container */
+#mainDiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding-bottom: 30px;
+}
+
+/* Time block hover effect */
+.time-block:hover {
+  box-shadow: 0 2px 12px rgba(6, 174, 213, 0.15);
+  transition: box-shadow 0.2s;
+}
+
+/* Save button hover */
+.saveBtn:hover {
+  background-color: #028090;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .time-block, .row {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  #mainDiv {
+    padding: 10px;
+  }
+}
+
+/* Hour label styling */
+.hour {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Description textarea focus */
+textarea:focus {
+  outline: none;
+  background: #e0f7fa;
+  color: #000;
+}body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
